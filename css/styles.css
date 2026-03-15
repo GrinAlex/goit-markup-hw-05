@@ -612,7 +612,7 @@ button {
 
 .modal {
     position: absolute;
-    padding: 72px 24px 24px 24 px;
+    padding: 72px 24px 24px 24px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -664,13 +664,13 @@ button {
 }
 
 .modal-caption {
+    margin-bottom: 16px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     text-align: center;
     color: #2e2f42;
-    margin: 72px 0 16px;
 }
 
 .modal-form-wrapper {
