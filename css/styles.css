@@ -778,7 +778,6 @@ button {
 }
 
 .modal-form-agreement {
-    display: flex;
     align-items: center;
     margin-bottom: 24px;
     font-size: 12px;
