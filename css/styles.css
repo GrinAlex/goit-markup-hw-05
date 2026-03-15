@@ -700,7 +700,7 @@ button {
     border-radius: 4px;
     background-color: transparent;
     transition: var(--anim-normal);
-    transition-property: border;
+    transition-property: border-color;
 }
 
 .modal-form-input:focus {
@@ -733,6 +733,7 @@ button {
     line-height: 1.17;
     letter-spacing: 0.04em;
     color: rgba(46, 47, 66, 0.4);
+    background-color: transparent;
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 4px;
     outline: transparent;
@@ -755,6 +756,10 @@ button {
 }
 
 /* Custom checkbox */
+.modal-form-agreement-wrapper {
+    margin-bottom: 24px;
+}
+
 .modal-form-agreement {
     display: flex;
     align-items: center;
