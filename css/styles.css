@@ -545,7 +545,7 @@ button {
 }
 
 .footer-subscribe-email:placeholder-shown{
-    color: #fff;
+    background-color: transparent;
 }
 
 .footer-subscribe-email:hover,
@@ -641,6 +641,8 @@ button {
     height: 24px;
     background-color: #e7e9fc;
     border: 1px solid rgba(0, 0, 0, 0.1);
+    transition: var(--anim-normal);
+    transition-property: background-color, border;
 }
 
 .modal-btn:hover,
@@ -649,8 +651,13 @@ button {
     background-color: #404bbf;
 }
 
+.modal-btn-icon {
+    transition: fill var(--anim-normal);
+}
+
 .modal-btn:hover .modal-btn-icon {
     fill: #FFFFFF;
+
 }
 
 .modal-caption {
