@@ -751,8 +751,25 @@ button {
 }
 
 .modal-form-btn {
-    display: flex;
-    justify-content: center;
+    display: block;
+    margin:0 auto;
+    min-width: 169px;
+    height: 56px;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+    cursor: pointer;
+    background-color: #4D5AE5;
+    border: none;
+    transition: background-color var(--anim-normal);
+}
+
+.modal-form-btn:hover,
+.modal-form-btn:focus {
+    background-color: #404BBF;
 }
 
 /* Custom checkbox */
@@ -774,19 +791,22 @@ button {
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    fill: transparent;
     width: 16px;
     height: 16px;
     margin-right: 12px;
-    border-radius: 2px;
     border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 2px;
     cursor: pointer;
     transition: var(--anim-normal);
-    transition-property: background-color, border-color;
+    transition-property: background-color, border, fill;
 }
 
 input[type="checkbox"]:checked + .modal-form-checkbox {
+    border: none;
+    fill: #F4F4FD;
     background-color: #404bbf;
-    border-color: #404bbf;
+    /* border-color: #404bbf; */
 }
 
 .modal-form-checkbox-icon {
