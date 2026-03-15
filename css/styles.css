@@ -802,11 +802,10 @@ button {
     transition-property: background-color, border, fill;
 }
 
-input[type="checkbox"]:checked + .modal-form-checkbox {
+input[type="checkbox"]:checked + label > .modal-form-checkbox {
     border: none;
     fill: #F4F4FD;
     background-color: #404bbf;
-    /* border-color: #404bbf; */
 }
 
 .modal-form-checkbox-icon {
@@ -814,7 +813,7 @@ input[type="checkbox"]:checked + .modal-form-checkbox {
     transform: opacity var(--anim-normal);
 }
 
-input[type="checkbox"]:checked + .modal-form-checkbox > modal-form-checkbox-icon {
+input[type="checkbox"]:checked + label + .modal-form-checkbox > modal-form-checkbox-icon {
     opacity: 1;
 }
 
